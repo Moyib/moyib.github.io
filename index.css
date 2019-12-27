@@ -11,17 +11,20 @@ li {
   list-style-type: none;
   font-weight: bold;
 }
-.nav:hover {
+
+li:hover {
   background-color: #C2DFFF;
+  display: inline-block;
   border-style: none;
   border-radius: 50px;
   padding: 10px;
   color: #55ACEE;
   cursor: pointer;
+  text-align: center;
 }
 
 .major-container {
-  padding: 20px 0;
+  padding: 0.18rem;
   display: flex;
   justify-content: center;
 }
@@ -31,7 +34,7 @@ li {
   height: 100vh;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+
 }
 
 .sidebar {
@@ -60,14 +63,14 @@ img {
   background-color: #55ACEE;
   border-style: none;
   border-radius: 30px;
-  width: 130px;
+  width: 6rem;
   padding: 10px;
   color: white;
   text-align: center;
   font-weight: bold;
 }
 
-.xyz {
+.xyz:hover {
   background-color: #2E99EA;
   cursor: pointer;
 }
@@ -88,7 +91,7 @@ img {
   border-left: 1px solid #e3e3e3;
   border-right: 1px solid #e3e3e3;
   width: 40vw;
-  height: 100%;
+  height: inherit;
 }
 
 .header {
@@ -182,17 +185,18 @@ img {
 .ttml {
   display: flex;
   justify-content: space-around;
-  position: relative;
+  padding: 5px 0;
+  position: relative;  /* Need this to position the :after based off this element's position */
 }
 
 .ttml:after {
-  content: "";
   position: absolute;
-  bottom: 0px;
+  bottom: 3px;
+  content: '';
   height: 1px;
-  width: calc(10px + 100% + 10px);
-  background-color: #e3e3e3;
-}
+  background: #e3e3e3;
+  width: calc(10px + 100% + 10px); /* padding-left + width of element + padding-right */
+  }
 
 .ttmls {
   border-bottom: 2px solid #55ACEE;
@@ -205,7 +209,7 @@ img {
   font-weight: bold;
   display: inline-block;
   padding: 7px;
-  width: calc(20px + 10vw + 20px);
+  width: 10vw;
   text-align: center;
   }
 
@@ -213,6 +217,7 @@ img {
     color: #55ACEE;
     background-color: #C2DFFF;
     padding: 3px;
+
     text-align: center;
   }
 
@@ -452,4 +457,35 @@ img {
   position: relative;
   left: 15px;
   color: #657786;
+}
+
+@media screen and (max-width: 700px) {
+  .side-bar {
+    width: 30vw;
+  }
+
+  .middle-bar {
+    width: 80vw;
+  }
+  .right-bar{
+   visibility: hidden;
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .xyz {
+  all: unset;
+  background-color: #55ACEE;
+  border-style: none;
+  border-radius: 30px;
+  width: 2.5rem;
+  margin-right: 1.2rem;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  }
 }
