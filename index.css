@@ -23,6 +23,10 @@ li:hover {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 .major-container {
   padding: 0.18rem;
   display: flex;
