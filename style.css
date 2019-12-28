@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic', sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  position: fixed;
+  top: 0;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.brandname a, .nav ul li a {
+  transition: color .5s;
+  color: white;
+}
+
+.brandname a:hover, .nav ul li a:hover {
+  color: #C6CDC7;
+}
+
+a {
+  text-decoration: none;
+}
+
+#intro {
+  background-color: #80464A;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+.summary {
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.summary div {
+  text-align: center;
+  margin: 20px;
+}
+
+.summary div h1 {
+  line-height: 3em;
+}
+
+.summary img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10em;
+}
+
+.parallax-1 {
+  background-image: url("A/quirky6.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#more {
+  background-color: #FFD9DB;
+  width: 100%;
+  padding: 40px;
+}
+
+.about {
+   width: 80%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.about div {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.who h2 {
+  line-height: 2em;
+}
+
+.parallax-2 {
+  background-image: url("A/quirky4.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#projects {
+  padding: 40px;
+  background-color: #FF918F;
+}
+
+#projects h1 {
+  text-align: center;
+  line-height: 2.5em;
+}
+
+.projectss {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.proj {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px;
+  transition: box-shadow .5s;
+}
+
+.proj:hover {
+  box-shadow: 0 4px 8px 0 rgba(200, 100, 30, 0.2), 0 6px 20px 0 rgba(200, 100, 30, 0.19);
+}
+
+.proj img {
+  width: 100%;
+}
+
+.desc {
+  padding: 7px;
+  text-align: center;
+  width: 100%;
+  height: inherit;
+}
+
+#contact {
+  width: 100%;
+  padding: 5rem;
+  background-color: #FFDDDB;
+}
+
+#contact h2 {
+  text-align: center;
+  line-height: 3em;
+}
+
+.cont {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info h5 {
+  line-height: 3em;
+}
+
+.info a i {
+  text-align: center;
+}
+
+.fa-affiliatetheme {
+  font-size: 3em;
+}
