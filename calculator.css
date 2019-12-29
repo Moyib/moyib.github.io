@@ -1,0 +1,272 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ body {
+  color: white;
+}
+
+.container {
+  width: 350px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 0;
+}
+
+.calculator {
+  position: absolute;
+  height: 650px;
+  width: 380px;
+  background-color: #000;
+  border-radius: 3rem;
+  z-index: 2;
+}
+
+.calculator:before {
+  content: " ";
+  position: absolute;
+  height: 640px;
+  width: 370px;
+  top: 5px;
+  left: 5px;
+  background-color: rgba(173, 173, 173, 0.63);
+  border-radius: 3rem;
+}
+
+.calculator:after {
+  content: " ";
+  position: absolute;
+  height: 630px;
+  width: 360px;
+  background-color: #000;
+  top: 10.3px;
+  left: 10.5px;
+  border-radius: 2.5rem;
+}
+
+.main-screen {
+  position: absolute;
+  z-index: 3;
+  height: 620px;
+  width: 350px;
+  top: 15px;
+  left: 15px;
+  background-color: rgba(168, 168, 168, 0.21);
+  border-radius: 2.3rem;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+.main-screen:before {
+  position: absolute;
+  top: -1px;
+  left: 85px;
+  content: " ";
+  height: 28px;
+  width: 180px;
+  background-color: #000;
+  border-radius: 0 0 20px 20px;
+}
+
+.main-screen:after {
+  position: absolute;
+  content: " ";
+  top: 611px;
+  left: 130px;
+  background-color: #CDCCCA;
+  height: 5px;
+  width: 100px;
+  border-radius: 2rem;
+}
+
+.time {
+  position: absolute;
+  top: 11px;
+  left: 23px;
+  font-size: .85rem;
+  font-family: 'Rubik', sans-serif;
+}
+
+.network {
+  position: absolute;
+  background-color: white;
+  height: 4px;
+  width: 2px;
+  left: 268px;
+  top: 20px;
+}
+
+.network:before {
+  position: absolute;
+  content: " ";
+  background-color: white;
+  height: 6px;
+  width: 2px;
+  left: 4px;
+  top: -2px;
+}
+
+.network:after {
+  position: absolute;
+  content: " ";
+  background-color: white;
+  height: 9px;
+  width: 2px;
+  left: 8px;
+  top: -5px;
+}
+
+.wifi {
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 2px;
+  left: 290px;
+  top: 22px;
+  border-radius: 100%;
+}
+
+.wifi:before {
+  position: absolute;
+  content: " ";
+  height: 10px;
+  width: 10px;
+  border: 1.5px solid transparent;
+  border-top-color: white;
+  left: -4px;
+  top: -4px;
+  border-radius: 100%;
+}
+
+.wifi:after {
+  position: absolute;
+  content: " ";
+  height: 13px;
+  width: 16px;
+  border: 1.5px solid transparent;
+  border-top-color: white;
+  left: -6.99px;
+  top: -7.9px;
+  border-radius: 100%;
+}
+
+.battery {
+  position: absolute;
+  background-color: black;
+  width: 13px;
+  height: 7.5px;
+  border: 1px solid white;
+  top: 17px;
+  left: 305px;
+}
+
+.battery:before {
+  position: absolute;
+  content: " ";
+  background-color: white;
+  width: 4px;
+  height: 4px;
+  top: 0.5px;
+  left: 1px;
+}
+
+.battery:after {
+  position: absolute;
+  content: " ";
+  background-color: white;
+  width: 2px;
+  height: 2px;
+  border: 1px solid white;
+  top: 2px;
+  left: 11px;
+}
+
+.result {
+  position: absolute;
+  left: 290px;
+  top: 85px;
+  font-size: 3.9rem;
+}
+
+.actual {
+  position: absolute;
+  top: 155px;
+  left: 15px;
+  background-color: transparent;
+  border-radius: 2rem;
+}
+
+.calc-button-row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+}
+
+
+.calc-button-row button {
+  text-align: center;
+  border: none;
+  height: 80px;
+  font-size: 2rem;
+  width: 70px;
+  border-radius: 100%;
+  margin: 5px;
+  background-color: #808080;
+  color: white;
+  cursor: pointer;
+
+}
+
+
+button {
+  all: unset;
+  transition: background-color .3s;
+}
+
+
+.calc-button-row button:hover {
+  background-color: #ccc7c7;
+}
+
+.calc-button-row button:active {
+  background-color: #d8d9db;
+  transition: none;
+}
+
+.calc-button-row .grey {
+  background-color: #ccc7c7;
+  color: black;
+}
+
+.calc-button-row .grey:hover {
+  background-color: #ebebeb;
+}
+
+.calc-button-row .grey:active {
+   background-color: #d8d9db;
+}
+
+button:last-child {
+  background-color: orange;
+  color: white;
+}
+
+button:last-child:hover {
+  background-color: #F5BF53;
+}
+
+button:last-child:active {
+  background-color: #dd8d37;
+}
+.grow {
+   flex-basis: 50%;
+   border-radius: 1rem;
+}
